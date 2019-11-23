@@ -15,3 +15,23 @@ body {
   font-family: 'Cuprum', sans-serif;
   background: $background;
 }
+
+.form {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  &__button-area {
+    margin: 24px 82px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__reset{
+    margin-top: 4px;
+  }
+}
+
+.form-container {
+  margin: 32px;
+  display: flex;
+  justify-content: center;
+}

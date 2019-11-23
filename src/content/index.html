@@ -10,7 +10,45 @@
 </head>
 
 <body>
-<h1>firebased-forms</h1>
+<main class="form-container">
+  <form class="form">
+    <label for="id">ID</label>
+    <input id="id" class="form__id--js">
+    <label for="name">Imię</label>
+    <input id="name" class="form__name--js">
+    <label for="surname">Nazwisko</label>
+    <input id="surname" class="form__surname--js">
+    <label for="post">Komentarz</label>
+    <textarea id="post" class="form__post--js"></textarea>
+    <div class="form__button-area">
+      <button class="form__add form__add--js">DODAJ</button>
+      <button class="form__reset form__reset--js">RESET</button>
+    </div>
+  </form>
+
+</main>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBjm0OPcXSb-lD1YiUhaM2Tbvk5nTMwY6M",
+    authDomain: "hadrian-test-5a70f.firebaseapp.com",
+    databaseURL: "https://hadrian-test-5a70f.firebaseio.com",
+    projectId: "hadrian-test-5a70f",
+    storageBucket: "hadrian-test-5a70f.appspot.com",
+    messagingSenderId: "87929167428",
+    appId: "1:87929167428:web:72ca7553b4215f32766611"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
   <script src="js/main.js"></script>
 </body>
 
