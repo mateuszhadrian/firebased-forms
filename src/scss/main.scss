@@ -1,0 +1,17 @@
+@import "_normalize";
+@import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Cuprum&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Cuprum', sans-serif;
+  background: $background;
+}
